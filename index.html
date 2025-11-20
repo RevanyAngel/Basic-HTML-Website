@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website pribadi yang berisi resume">
+        <meta property="og:title" content="Ree Website">
+        <meta property="og:description" content="Website pribadi yang berisi resume">
+        <meta property="og:type" content="website">
+        <title>Ree Website</title>
+        <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                font-family: "Nunito", sans-serif;
+                margin: 2rem;
+                border: 3px solid black;
+            }
+
+            h1, h2 {
+                font-family: "Caveat", cursive;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2rem;
+                font-size: 1.2rem;
+                padding: 1rem;
+            }
+
+            nav {
+                display: flex;
+                gap: 1rem;
+            }
+
+            .atas {
+                text-align: center;
+                padding: 1rem 0 4rem 0;
+                border-bottom: 2px solid black;
+                margin: 0;
+            }
+
+            .atas h1 {
+                margin: 0;
+                font-size: 3rem;
+            }
+
+            .atas p {
+                color: rgb(122, 122, 122);
+            }
+
+            .tengah {
+                display: grid;
+                grid-template-columns: 1.5fr 2.5fr 2fr;
+                border-bottom: 2px solid black;
+            }
+
+            .tengah-isi {
+                border-right: 2px solid black;
+            }
+
+            .tengah-isi.projects h1 {
+                padding-left: 1rem;
+            }
+
+            .tengah-isi.projects ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            .tengah-isi.projects li {
+                border-bottom: 2px solid black;
+                padding: 1rem 0 .5rem 1.5rem;
+            }
+
+            .tengah-isi.projects li:last-child {
+                border-bottom: none;
+            }
+
+            .experience {
+                padding: 0;
+            }
+
+            .experience .satu {
+                border-bottom: 2px solid black;
+            }
+
+            .tengah-isi.experience h1,
+            .tengah-isi.experience h2,
+            .tengah-isi.experience p,
+            .tengah-isi.experience a {
+                padding-left: 1rem;
+            }
+
+            .tengah-isi.experience a {
+                display: block;
+                padding-bottom: 2rem;
+            }
+
+            .education {
+                border-right: none;
+                padding: 0 1rem 1rem 1rem;
+            }
+
+            .bawah {
+                padding: 1rem;
+            }
+
+            .wrapper-ulasan {
+                display: flex;
+            }
+            .ulasan {
+                display: block;
+                border: 2px solid black;
+                border-radius: 30px;
+                margin: 1rem 1.5rem 2rem 1.5rem;
+                padding: 3rem 1.5rem;
+            }
+
+            .ulasan p {
+                margin: 0;
+                color: rgb(170, 170, 170);
+            }
+
+            .ulasan h4 {
+                margin: .4rem 0 1rem 0;
+            }
+
+            footer {
+                text-align: center;
+                padding: 5rem;
+                margin-top: 2rem;
+                font-size: 1.2rem;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <p>Ree</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="content/projects.html">Projects</a>
+                <a href="content/articles.html">Articles</a>
+                <a href="content/contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="atas">
+                <h1>Frontend Developer</h1>
+                <p>Ini website yang dibikin modal nekat dan niat</p>
+            </section>
+            <section class="tengah">
+                <section class="tengah-isi projects">
+                    <h1>Projects</h1>
+                    <ul>
+                        <li>HTML only portfolio</li>
+                        <li>Simple blog with markdown</li>
+                        <li>To-do list app</li>
+                        <li>Quiz App</li>
+                        <li>Weather App</li>
+                    </ul>
+                </section>
+                <section class="tengah-isi experience">
+                    <h1>Work Experience</h1>
+                    <section class="experience satu">
+                        <h2>roadmap.sh</h2>
+                        <p>Mengerjakan semua frontend project di roadmap.sh</p>
+                        <a>visit my profile</a>
+                    </section>
+                    <section class="experience dua">
+                        <h2>OpenSource Work</h2>
+                        <p>Berkontribusi ke 50 project opensource.</p>
+                        <a>visit my GitHub profile</a>
+                    </section>
+                </section>
+                <section class="tengah-isi education">
+                    <h1>Education</h1>
+                    <p>Sedang menempuh pendidikan di Universitas harvard bekasi, jurusan Teknik Informatika.</p>
+                    <p>course yang saya ikuti:</p>
+                    <ul>
+                        <li>UI/UX design</li>
+                        <li>Frontend web development</li>
+                        <li>Computer Grapichs</li>
+                    </ul>
+                </section>
+            </section>
+            
+            <section class="bawah">
+                <h1>Ulasan dari dosen</h1>
+                <section class="wrapper-ulasan">
+                    <section class="ulasan">
+                        <h4>"Ree adalah mahasiswa yang sangat berdedikasi dan selalu berusaha memberikan yang terbaik dalam setiap proyek yang dia kerjakan."</h4>
+                        <p>Siti Nurbaya</p>
+                        <p>Dosen Pembimbing</p>
+                    </section>
+                    <section class="ulasan">
+                        <h4>"Ree adalah mahasiswa yang sangat berdedikasi dan selalu berusaha memberikan yang terbaik dalam setiap proyek yang dia kerjakan."</h4>
+                        <p>Siti Nurbaya</p>
+                        <p>Dosen Pembimbing</p>
+                    </section>
+                    <section class="ulasan">
+                        <h4>"Ree adalah mahasiswa yang sangat berdedikasi dan selalu berusaha memberikan yang terbaik dalam setiap proyek yang dia kerjakan."</h4>
+                        <p>Siti Nurbaya</p>
+                        <p>Dosen Pembimbing</p>
+                    </section>   
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Ree Website. All rights reserved 2025</p>
+        </footer>
+    </body>
+</html>
